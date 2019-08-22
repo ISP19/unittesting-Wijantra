@@ -29,8 +29,7 @@ Write a table describing your test cases.
 |------------------------|---------------------|
 | positive numerator and denominator |  fraction as a string that display "positive numerator/positive denominator"  |
 | positive numerator and negative denominator | fraction as a string that display "negative numerator/positive denominator" |
-| numerator and denominator have common factors and numerator and denominator have common factors |
- fraction as a string that display "numerator that have no common factors/denominator that have no common factors" |
+| numerator and denominator have common factors and numerator and denominator have common factors | fraction as a string that display "numerator that have no common factors/denominator that have no common factors" |
 | only numerator | integer as a string that display "numerator" |
 | numerator and 1 | integer as a string that display "numerator" |
 | numerator and -1 | integer as a string that display "-numerator" |
@@ -59,14 +58,10 @@ Write a table describing your test cases.
 | Test case              |  Expected Result    |
 |------------------------|---------------------|
 | 2 positive fraction | sum of positive fraction |
-| (numerator and denominator have no common factors) and (numerator and denominator have no common factors) |
- sum of positive fraction that have no common factors |
-| (negative numerator and denominator)and (numerator and negative denominator)|
- sum of fraction that have sign as the sign of greater fraction |
-| (numerator and denominator have common factors) and (numerator and denominator have common factors) |
- sum of positive fraction that have no common factors |
-| (numerator and denominator have common factors) and (numerator and denominator have no common factors) |
- sum of positive fraction that have no common factors |
+| (numerator and denominator have no common factors) and (numerator and denominator have no common factors) | sum of positive fraction that have no common factors |
+| (negative numerator and denominator)and (numerator and negative denominator)| sum of fraction that have sign as the sign of greater fraction |
+| (numerator and denominator have common factors) and (numerator and denominator have common factors) | sum of positive fraction that have no common factors |
+| (numerator and denominator have common factors) and (numerator and denominator have no common factors) | sum of positive fraction that have no common factors |
 | 1/0 and 0/0 (infinity + Nan = Nan)  | 0/0 |
 | positive fraction and 0/0 (number + Nan = Nan) | 0/0 |
 | negative fraction and 0/0 (negative number + Nan = Nan) | 0/0 |
@@ -81,16 +76,11 @@ Write a table describing your test cases.
 | Test case              |  Expected Result    |
 |------------------------|---------------------|
 | 2 positive fraction | product of positive fraction |
-| (numerator and denominator have no common factors) and (numerator and denominator have no common factors) |
- product of positive fraction that factors no common factors|
-| (numerator and denominator have common factors) and (numerator and denominator have common factors) |
- product of positive fraction that factors no common factors |
-| (numerator and denominator have common factors) and (numerator and denominator have no common factors) |
- product of positive fraction that factors no common factors |
-| (numerator of fraction is negative) and (positive fraction) |
- product of fraction that have negative numerator and positive denominator |
-| (positive fraction) and ( denominator of fraction is negative) |
- product of fraction that have negative numerator and positive denominator |
+| (numerator and denominator have no common factors) and (numerator and denominator have no common factors) | product of positive fraction that factors no common factors|
+| (numerator and denominator have common factors) and (numerator and denominator have common factors) | product of positive fraction that factors no common factors |
+| (numerator and denominator have common factors) and (numerator and denominator have no common factors) | product of positive fraction that factors no common factors |
+| (numerator of fraction is negative) and (positive fraction) | product of fraction that have negative numerator and positive denominator |
+| (positive fraction) and ( denominator of fraction is negative) | product of fraction that have negative numerator and positive denominator |
 | positive fraction and 0/0 (number * Nan = Nan) | 0/0 |
 | 0 and 1/0 (0 * infinity = Nan) | 0/0 |
 | 0 and -1/0 (0 * -infinity = Nan) | 0/0 |
