@@ -88,6 +88,7 @@ class FractionTest(unittest.TestCase):
         self.assertEqual(Fraction(1, 0), Fraction(0) + Fraction(1, 0))
         self.assertEqual(Fraction(0, 0), Fraction(1, 0) + Fraction(-1, 0))  # case that infinity - infinity is nan
         self.assertEqual(Fraction(1, 0), Fraction(3, 0) + Fraction(1, 0))
+        self.assertEqual(Fraction(0, 0), Fraction(-3, 0) + Fraction(1, 0))
 
     def test_mul(self):
         self.assertEqual(Fraction(5, 507), Fraction(1, 39) * Fraction(5, 13))
