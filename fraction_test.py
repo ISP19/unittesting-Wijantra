@@ -103,6 +103,8 @@ class FractionTest(unittest.TestCase):
         self.assertEqual(Fraction(0, 0), Fraction(0) * Fraction(1, 0))  # case that 0 multiply infiny is nan
         self.assertEqual(Fraction(0, 0), Fraction(0) * Fraction(-1, 0))  # case that 0 multiply -infiny is nan
         self.assertEqual(Fraction(-1, 0),Fraction(1, 0) * Fraction(-1, 0))  # case that infinity multiply -infiny is -infinity
+        self.assertEqual(Fraction(1, 0), Fraction(3, 0) * Fraction(4, 0))  # case that infinity multiply infiny is infinity
+        self.assertEqual(Fraction(-1, 0), Fraction(3, 0) * Fraction(-4, 0))  # case that infinity multiply -infiny is -infinity
 
     def test_eq(self):
         f = Fraction(1, 2)
