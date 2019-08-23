@@ -102,7 +102,7 @@ Write a table describing your test cases.
 | 2 fraction that have same numerator and denominator but sign is different | False |
 | 2 fraction that have denominator equal 0 and sign is the same | True |
 | -1/0 and 1/0 | False |
-| 2 fraction that have denominator equal 0 but sign is the different | True |
+| 2 fraction that have denominator equal 0 but sign is the different | False |
 | 0 and 0/0 (number ana Nan)| False |
 
 
