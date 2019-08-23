@@ -45,9 +45,8 @@ Write a table describing your test cases.
 | only numerator | numerator and denominator = 1 |
 | numerator = 1 and denominator = 0 | numerator = 1 and denominator = 0 |
 | numerator and denominator have common factors | numerator and denominator have no common factors |
-| numerator and negative denominator have common factors | negative numerator and denominator have common factors |
+| numerator and negative denominator have common factors | negative numerator and denominator have no common factors |
 | -1 and 0 (infinite number) | numerator = -1 and denominator = 0 |
-| 0 and 0 (Nan) | numerator = 0 and denominator = 0 |
 | 0 and 0 (Nan) | numerator = 0 and denominator = 0 |
 | argument not an integer | raise TypeError: type object cannot be interpreted as an integer |
 
@@ -58,13 +57,13 @@ Write a table describing your test cases.
 |------------------------|---------------------|
 | 2 positive fraction | sum of positive fraction |
 | (numerator and denominator have no common factors) and (numerator and denominator have no common factors) | sum of positive fraction that have no common factors |
-| (negative numerator and denominator)and (numerator and negative denominator)| sum of fraction that have sign as the sign of greater fraction |
+| (negative numerator and denominator)and (numerator and denominator)| sum of fraction that have sign as the sign of greater fraction |
+| (negative numerator and denominator)and (numerator and negative denominator)| sum of negative fraction |
 | (numerator and denominator have common factors) and (numerator and denominator have common factors) | sum of positive fraction that have no common factors |
 | (numerator and denominator have common factors) and (numerator and denominator have no common factors) | sum of positive fraction that have no common factors |
 | 1/0 and 0/0 (infinity + Nan = Nan)  | 0/0 (nan) |
 | positive fraction and 0/0 (number + Nan = Nan) | 0/0 (nan) |
 | negative fraction and 0/0 (negative number + Nan = Nan) | 0/0 (nan) |
-| 1/0 and 0/0 (infinity + Nan = Nan) | 0/0 (nan) |
 | 0 and 1/0 (number + infinity = infinity) | 1/0 (infinity) |
 | 1/0 and 1/0 (infinity  + infinity = infinity) | 1/0 (infinity) |
 | 1/0 and -1/0 (infinity - infinity = Nan)  | 0/0 (nan) |
@@ -100,7 +99,6 @@ Write a table describing your test cases.
 | 2 fraction that have only same denominator | False |
 | 2 fraction that have same numerator and denominator but sign is different | False |
 | 2 fraction that have denominator equal 0 and sign is the same | True |
-| -1/0 and 1/0 | False |
 | 2 fraction that have denominator equal 0 but sign is the different | False |
 | 0 and 0/0 (number ana Nan)| False |
 
