@@ -18,7 +18,7 @@ Write a table describing your test cases.
 | many items, many times |  many item list     |
 | many items, many times, many list  |  list with many item and list  |
 | many items, many times |  many item list     |
-| argument not a list  |  throws exception  |
+| argument not a list  |  raise TypeError |
 
 
 ## Test Cases for Fraction
@@ -50,8 +50,8 @@ Write a table describing your test cases.
 | -1 and 0 (infinite number) | numerator = -1 and denominator = 0 |
 | 0 and 0 (Nan) | numerator = 0 and denominator = 0 |
 | 0 and 0 (Nan) | numerator = 0 and denominator = 0 |
-| something that is not int and denominator | TypeError: type object cannot be interpreted as an integer |
-| numerator and something that is not int | TypeError: type object cannot be interpreted as an integer |
+| argument not an integer | raise TypeError: type object cannot be interpreted as an integer |
+
 
 ## Test Cases for add
 
@@ -69,9 +69,11 @@ Write a table describing your test cases.
 | 0 and 1/0 (number + infinity = infinity) | 1/0 (infinity) |
 | 1/0 and 1/0 (infinity  + infinity = infinity) | 1/0 (infinity) |
 | 1/0 and -1/0 (infinity - infinity = Nan)  | 0/0 (nan) |
+| (numerator is greater than 0 and denominator = 0) and (numerator is less than 0 and denominator = 0) | 0/0 (nan) |
+| (numerator is greater than 0 and denominator = 0) and (numerator is greater than 0 and denominator = 0) | 1/0 (infinity) |
 
 
-## Test Cases for multipy
+## Test Cases for multiply
 
 | Test case              |  Expected Result    |
 |------------------------|---------------------|
@@ -83,8 +85,10 @@ Write a table describing your test cases.
 | (positive fraction) and ( denominator of fraction is negative) | product of fraction that have negative numerator and positive denominator |
 | positive fraction and 0/0 (number * Nan = Nan) | 0/0 (nan) |
 | 0 and 1/0 (0 * infinity = Nan) | 0/0 (nan) |
-| 0 and -1/0 (0 * -infinity = Nan) | 0/0 (nan) |
-| 1/0 and -1/0 (infinity  * negatuve infinity = negatuve infinity)  | -1/0 ( negatuve infinity) |
+| 0 and -1/0 (0 * negative infinity = Nan) | 0/0 (nan) |
+| 1/0 and -1/0 (infinity  * negative infinity = negative infinity)  | -1/0 ( negative infinity) |
+| (numerator is greater than 0 and denominator = 0) and (numerator is less than 0 and denominator = 0) | -1/0 ( negative infinity) |
+| (numerator is greater than 0 and denominator = 0) and (numerator is greater than 0 and denominator = 0) | 1/0 ( positive infinity) |
 
 
 
