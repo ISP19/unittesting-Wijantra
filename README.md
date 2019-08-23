@@ -15,9 +15,8 @@ Write a table describing your test cases.
 | 2 items, many times, many orders | 2 item list, items in same order  |
 | what other test case?  |  what result?       |
 | many items, no duplicate  |  list with many items  |
-| many items, many times |  many item list     |
+| many items, many times |  list with many items  |
 | many items, many times, many list  |  list with many item and list  |
-| many items, many times |  many item list     |
 | argument not a list  |  raise TypeError |
 
 
