@@ -51,7 +51,7 @@ Write a table describing your test cases.
 | 0 and 0 (Nan) | numerator = 0 and denominator = 0 |
 | 0 and 0 (Nan) | numerator = 0 and denominator = 0 |
 | something that is not int and denominator | TypeError: type object cannot be interpreted as an integer |
-| numerator and something that is not | TypeError: type object cannot be interpreted as an integer |
+| numerator and something that is not int | TypeError: type object cannot be interpreted as an integer |
 
 ## Test Cases for add
 
@@ -62,13 +62,13 @@ Write a table describing your test cases.
 | (negative numerator and denominator)and (numerator and negative denominator)| sum of fraction that have sign as the sign of greater fraction |
 | (numerator and denominator have common factors) and (numerator and denominator have common factors) | sum of positive fraction that have no common factors |
 | (numerator and denominator have common factors) and (numerator and denominator have no common factors) | sum of positive fraction that have no common factors |
-| 1/0 and 0/0 (infinity + Nan = Nan)  | 0/0 |
-| positive fraction and 0/0 (number + Nan = Nan) | 0/0 |
-| negative fraction and 0/0 (negative number + Nan = Nan) | 0/0 |
-| 1/0 and 0/0 (infinity + Nan = Nan) | 0/0 |
-| 0 and 1/0 (number + infinity = infinity) | 1/0 |
-| 1/0 and 1/0 (infinity  + infinity = infinity) | 1/0 |
-| 1/0 and -1/0 (infinity - infinity = Nan)  | 0/0 |
+| 1/0 and 0/0 (infinity + Nan = Nan)  | 0/0 (nan) |
+| positive fraction and 0/0 (number + Nan = Nan) | 0/0 (nan) |
+| negative fraction and 0/0 (negative number + Nan = Nan) | 0/0 (nan) |
+| 1/0 and 0/0 (infinity + Nan = Nan) | 0/0 (nan) |
+| 0 and 1/0 (number + infinity = infinity) | 1/0 (infinity) |
+| 1/0 and 1/0 (infinity  + infinity = infinity) | 1/0 (infinity) |
+| 1/0 and -1/0 (infinity - infinity = Nan)  | 0/0 (nan) |
 
 
 ## Test Cases for multipy
@@ -81,10 +81,10 @@ Write a table describing your test cases.
 | (numerator and denominator have common factors) and (numerator and denominator have no common factors) | product of positive fraction that factors no common factors |
 | (numerator of fraction is negative) and (positive fraction) | product of fraction that have negative numerator and positive denominator |
 | (positive fraction) and ( denominator of fraction is negative) | product of fraction that have negative numerator and positive denominator |
-| positive fraction and 0/0 (number * Nan = Nan) | 0/0 |
-| 0 and 1/0 (0 * infinity = Nan) | 0/0 |
-| 0 and -1/0 (0 * -infinity = Nan) | 0/0 |
-| 1/0 and -1/0 (infinity  * negatuve infinity = negatuve infinity)  | -1/0 |
+| positive fraction and 0/0 (number * Nan = Nan) | 0/0 (nan) |
+| 0 and 1/0 (0 * infinity = Nan) | 0/0 (nan) |
+| 0 and -1/0 (0 * -infinity = Nan) | 0/0 (nan) |
+| 1/0 and -1/0 (infinity  * negatuve infinity = negatuve infinity)  | -1/0 ( negatuve infinity) |
 
 
 
