@@ -1,5 +1,7 @@
 ## Unit Testing Assignment
 
+[![Build Status](https://travis-ci.com/Wijantra/unittesting-Wijantra.svg?branch=master)](https://travis-ci.com/Wijantra/unittesting-Wijantra)
+
 by Wijantra Cojamnong
 
 
