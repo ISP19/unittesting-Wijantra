@@ -1,6 +1,11 @@
 ## Unit Testing Assignment
 
+
 [![Build Status](https://travis-ci.com/Wijantra/unittesting-Wijantra.svg?branch=master)](https://travis-ci.com/Wijantra/unittesting-Wijantra)
+
+
+[![codecov](https://codecov.io/gh/Wijantra/unittesting-Wijantra/branch/master/graph/badge.svg)](https://codecov.io/gh/Wijantra/unittesting-Wijantra)
+
 
 by Wijantra Cojamnong
 
