@@ -14,7 +14,7 @@
  # script to run tests. Script can have many commands, one per line.
  script:
    - python -m unittest discover -p "*_test.py"
-   - coverage run fraction_test.py (run your unit tests with "coverage" to generate code coverage data)
+   - coverage run fraction_test.py 
 
 after_success:
   - codecov
