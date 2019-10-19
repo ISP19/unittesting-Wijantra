@@ -139,3 +139,6 @@ class FractionTest(unittest.TestCase):
         self.assertFalse(p == v)  # 0 != 0/0 (Nan)
         self.assertFalse(p.__eq__(v))
         # Consider special values like 0, 1/0, -1/0
+
+if __name__ == '__main__':
+     unittest.main(verbosity=2)
